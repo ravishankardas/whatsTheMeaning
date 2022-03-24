@@ -67,7 +67,7 @@ io.on("connection", function (socket) {
   });
 });
 
-app.use("/", express.static("public"));
+app.use(express.static("public"));
 app.use(fileUpload());
 
 app.post("/extract-text", (req, res) => {
